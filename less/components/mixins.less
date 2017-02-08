@@ -1,0 +1,50 @@
+.clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+.cards() {
+  display: inline-block;
+  vertical-align: top;
+}
+.pseudo(@width: auto, @height: auto, @color: inherit) {
+  content: "";
+  position: absolute;
+  width: @width;
+  height: @height;
+  background: @color;
+}
+.add-font(@font-url, @font-name, @weight: normal, @style: normal) {
+  font-family: @font-name;
+  src: url('@{font-folder}@{font-url}.eot'); // IE9 Compat Modes
+  src: url('@{font-folder}@{font-url}.eot?#iefix') format('embedded-opentype'), // IE6-IE8
+  url('@{font-folder}@{font-url}.woff') format('woff'), // Pretty Modern Browsers
+  url('@{font-folder}@{font-url}.ttf') format('truetype'), // Safari, Android, iOS
+  url('@{font-folder}@{font-url}.svg#@{font-name}') format('svg'); // Legacy iOS
+  font-weight: @weight;
+  font-style: @style;
+}
+.font-exo(@size: inherit, @lh: inherit, @weight: auto, @color: inherit) {
+  font-family: "Exo 2", "Arial", sans-serif;
+  font-size: @size;
+  line-height: @lh;
+  font-weight: @weight;
+  color: @color;
+}
+.elemClear() {
+  margin: 0;
+  padding: 0;
+}
+.transition(@prop: all, @time: 0.3s, @ease: ease-in-out) {
+  transition: @prop @time @ease;
+}
+.bg-img(@img, @bgcolor: auto, @pos: center center, @att:scroll) {
+  background-image: url('@{img-folder}@{img}');
+  background-color: @bgcolor;
+  background-postition: @pos;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: @att;
+}
