@@ -37,6 +37,13 @@
   margin: 0;
   padding: 0;
 }
+.font-param(@size: inherit, @lh: inherit, @weight: auto, @color: inherit) {
+  // font-family: "Exo 2", "Arial", sans-serif;
+  font-size: @size;
+  line-height: @lh;
+  font-weight: @weight;
+  color: @color;
+}
 .transition(@prop: all, @time: 0.3s, @ease: ease-in-out) {
   transition: @prop @time @ease;
 }

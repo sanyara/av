@@ -11,20 +11,25 @@ var imagemin = require("gulp-imagemin");
 //var uglify = require("gulp-uglifyjs");
 var run = require("run-sequence");
 var del = require("del");
-//var svgstore = require("gulp-svgstore");
-//var svgmin = require("gulp-svgmin");
+var svgstore = require("gulp-svgstore");
+var svgmin = require("gulp-svgmin");
 
-/*
+
 gulp.task("symbols", function() {
   return gulp.src("img/icons/*.svg")
-    .pipe(svgmin())
+    .pipe(svgmin( {
+
+
+
+    }))
     .pipe(svgstore({
       inlineSvg: true
     }))
+
     .pipe(rename("symbols.svg"))
-    .pipe(gulp.dest("img/icons"));
+    .pipe(gulp.dest("img"));
 });
-*/
+
 gulp.task("style", function() {
   gulp.src("less/style.less")
     .pipe(plumber())

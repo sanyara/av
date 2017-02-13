@@ -1,5 +1,11 @@
 .slider-controls.carousel-indicators {
   bottom: 10px;
+  width: 100%;
+  left: 0;
+  margin-left: 0;
+}
+.slider-controls__arrow-container {
+  z-index: 2;
 }
 .slider-controls .slider-controls__item {
   position: relative;
@@ -99,12 +105,15 @@
   right: 0;
   height: 100%;
 }
+.slider-controls__zoom-btn {
+  display: none;
+}
 @media (min-width: @screen-xs-min) {
   .slider-controls__side-block span.slider-controls__to-left,
   .slider-controls__side-block span.slider-controls__to-right {
     top: 40%;
   }
-  .slider-controls {
+  .projects__right-column .slider-controls {
     &--vertical {
       position: absolute;
       top: 0;
@@ -123,6 +132,20 @@
       }
     }
   }
+
+  .slider-controls__zoom-btn {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    background: fade(#000, 50%);
+    border: none;
+    outline: none;
+    background: transparent url("../img/icons/zoom-icon.svg") no-repeat center center;
+    z-index: 15;
+  }
 }
 @media (min-width: @screen-sm-min) {
   .slider-controls__side-block span.slider-controls__to-left,
@@ -140,6 +163,10 @@
       padding-top: 120px;
       padding-left: 23px;
     }
+  }
+  .slider-controls__zoom-btn {
+    height: 50px;
+    width: 50px;
   }
 }
 @media (min-width: @screen-md-min) {
@@ -161,5 +188,9 @@
       padding-top: 153px;
       padding-left: 53px;
     }
+  }
+  .slider-controls__zoom-btn {
+    height: 111px;
+    width: 111px;
   }
 }

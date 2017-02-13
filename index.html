@@ -5,10 +5,12 @@
     <meta name="format-detection" content="telephone=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:100,200,300,400,600,700,800|Open+Sans" rel="stylesheet">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Avers</title>
     <link href="css/style.min.css" rel="stylesheet">
     <script src="js/picturefill.js" async></script>
+    <!-- <script src="http://pixp.fdrv.guru/pixp.js" type="text/javascript"></script> -->
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -42,7 +44,9 @@
                   <span class='page-header__num-desc'>Продажа газового оборудования</span>
                 </div>
                 <div class="page-header__contacts-item hidden-xs">
-                  <a class="page-header__help navbar-link" href="#">Вопрос-ответ</a>
+                  <a class="page-header__help navbar-link" href="#">
+                    <img src="img/icons/answer-icon.svg" width="16" height="15" alt="icon">
+                    Вопрос-ответ</a>
                 </div>
               </div>
             </div>
@@ -60,14 +64,54 @@
                   <li class="main-nav__item dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Услуги <span class="caret"></span></a>
                     <ul class="main-nav__sub-menu dropdown-menu">
-                      <li class="main-nav__sub-item main-nav__sub-item--1"><a href="#">Консультации</a></li>
-                      <li class="main-nav__sub-item main-nav__sub-item--2"><a href="#">Проектирование и монтаж систем отопления</a></li>
-                      <li class="main-nav__sub-item main-nav__sub-item--3"><a href="#">Проектирование газопроводов, объектов газоснабжения и газопотребления</a></li>
-                      <li class="main-nav__sub-item main-nav__sub-item--4"><a href="#">Монтаж и проверка дымовых и вентиляционных каналов</a></li>
-                      <li class="main-nav__sub-item main-nav__sub-item--5"><a href="#">Строительство газопроводов</a></li>
-                      <li class="main-nav__sub-item main-nav__sub-item--6"><a href="#">Продажа газового оборудования</a></li>
-                      <li class="main-nav__sub-item main-nav__sub-item--7"><a href="#">Сервис и монтаж газового оборудования</a></li>
-                      <li class="main-nav__sub-item main-nav__sub-item--8"><a href="#">Монтаж систем загазованности</a></li>
+                      <li class="main-nav__sub-item main-nav__sub-item--1">
+                        <a href="#">
+                          <div class="main-nav__icon-wrapper" style="background-image: url('img/icons/submenu-icon-1.svg');"></div>
+                          <span>Консультации</span>
+                        </a>
+                      </li>
+                      <li class="main-nav__sub-item main-nav__sub-item--2">
+                        <a href="#">
+                          <div class="main-nav__icon-wrapper" style="background-image: url('img/icons/submenu-icon-2.svg');"></div>
+                          <span>Проектирование и монтаж систем отопления</span>
+                        </a>
+                      </li>
+                      <li class="main-nav__sub-item main-nav__sub-item--3">
+                        <a href="#">
+                          <div class="main-nav__icon-wrapper" style="background-image: url('img/icons/submenu-icon-3.svg');"></div>
+                          <span>Проектирование газопроводов, объектов газоснабжения и газопотребления</span>
+                        </a>
+                      </li>
+                      <li class="main-nav__sub-item main-nav__sub-item--4">
+                        <a href="#">
+                          <div class="main-nav__icon-wrapper" style="background-image: url('img/icons/submenu-icon-4.svg');"></div>
+                          <span>Монтаж и проверка дымовых и вентиляционных каналов</span>
+                        </a>
+                      </li>
+                      <li class="main-nav__sub-item main-nav__sub-item--5">
+                        <a href="#">
+                          <div class="main-nav__icon-wrapper" style="background-image: url('img/icons/submenu-icon-5.svg');"></div>
+                          <span>Строительство газопроводов</span>
+                        </a>
+                      </li>
+                      <li class="main-nav__sub-item main-nav__sub-item--6">
+                        <a href="#">
+                          <div class="main-nav__icon-wrapper" style="background-image: url('img/icons/submenu-icon-6.svg');"></div>
+                          <span>Продажа газового оборудования</span>
+                        </a>
+                      </li>
+                      <li class="main-nav__sub-item main-nav__sub-item--7">
+                        <a href="#">
+                          <div class="main-nav__icon-wrapper" style="background-image: url('img/icons/submenu-icon-7.svg');"></div>
+                          <span>Сервис и монтаж газового оборудования</span>
+                        </a>
+                      </li>
+                      <li class="main-nav__sub-item main-nav__sub-item--8">
+                        <a href="#">
+                          <div class="main-nav__icon-wrapper" style="background-image: url('img/icons/submenu-icon-8.svg');"></div>
+                          <span>Монтаж систем загазованности</span>
+                        </a>
+                      </li>
                     </ul>
                   </li>
                   <li class="main-nav__item"><a href="#">Оборудование</a></li>
@@ -82,13 +126,13 @@
       </nav>
     </header>
     <div class="promo">
-      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <div id="carousel-1" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="slider-controls carousel-indicators">
-          <li class="slider-controls__item" data-target="#carousel-example-generic" data-slide-to="0"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="1" class="active slider-controls__item"></li>
-          <li class="slider-controls__item" data-target="#carousel-example-generic" data-slide-to="2"></li>
-          <li class="slider-controls__item" data-target="#carousel-example-generic" data-slide-to="3"></li>
+          <li class="slider-controls__item" data-target="#carousel-1" data-slide-to="0"></li>
+          <li data-target="#carousel-1" data-slide-to="1" class="active slider-controls__item"></li>
+          <li class="slider-controls__item" data-target="#carousel-1" data-slide-to="2"></li>
+          <li class="slider-controls__item" data-target="#carousel-1" data-slide-to="3"></li>
         </ol>
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
@@ -120,15 +164,43 @@
               </div>
             </div>
           </div>
+          <div class="promo__item item">
+            <picture>
+              <source media="(min-width: 1920px)" srcset="img/background-1-full.jpg">
+              <img src="img/background-1.jpg" alt="...">
+            </picture>
+            <div class="promo__item-content">
+              <div class="promo__wrap-content container">
+                <div class="row">
+                  <p class="promo__text">Газификация домов, коттеджных посёлков,
+                  промышленных предприятий</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="promo__item item">
+            <picture>
+              <source media="(min-width: 1920px)" srcset="img/background-1-full.jpg">
+              <img src="img/background-1.jpg" alt="...">
+            </picture>
+            <div class="promo__item-content">
+              <div class="promo__wrap-content container">
+                <div class="row">
+                  <p class="promo__text">Газификация домов, коттеджных посёлков,
+                  промышленных предприятий</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div><!-- carousel-inner -->
         <!-- Controls -->
         <div class="slider-controls__arrow-container container">
           <!-- <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> -->
-          <a class="slider-controls__side-block left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <a class="slider-controls__side-block left carousel-control" href="#carousel-1" role="button" data-slide="prev">
             <span class="slider-controls__to-left glyphicon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
           </a>
-          <a class="slider-controls__side-block right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <a class="slider-controls__side-block right carousel-control" href="#carousel-1" role="button" data-slide="next">
             <span class="slider-controls__to-right glyphicon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
@@ -150,27 +222,35 @@
         <div class="services__list  row">
           <a class="services__list-item services__list-item--1" href="#">
             <span class="services__item-name">Консультации</span>
+            <img data-object-fit="cover" src="img/services-1.jpg" alt="...">
           </a>
           <a class="services__list-item services__list-item--2" href="#">
             <span class="services__item-name">Проектирование газопроводов, объектов газоснабжения и газопотребления</span>
+            <img data-object-fit="cover" src="img/services-2.jpg" alt="...">
           </a>
           <a class="services__list-item services__list-item--3" href="#">
             <span class="services__item-name">Строительство газопроводов</span>
+            <img data-object-fit="cover" src="img/services-3.jpg" alt="...">
           </a>
           <a class="services__list-item services__list-item--4" href="#">
             <span class="services__item-name">Сервис и монтаж газового оборудования</span>
+            <img data-object-fit="cover" src="img/services-4.jpg" alt="...">
           </a>
           <a class="services__list-item services__list-item--5" href="#">
             <span class="services__item-name">Проектирование и монтаж систем отопления</span>
+            <img data-object-fit="cover" src="img/services-5.jpg" alt="...">
           </a>
           <a class="services__list-item services__list-item--6" href="#">
             <span class="services__item-name">Продажа газового оборудования</span>
+            <img data-object-fit="cover" src="img/services-6.jpg" alt="...">
           </a>
           <a class="services__list-item services__list-item--7" href="#">
             <span class="services__item-name">Монтаж и проверка дымовых и вентиляционных каналов</span>
+            <img data-object-fit="cover" src="img/services-7.jpg" alt="...">
           </a>
           <a class="services__list-item services__list-item--8" href="#">
             <span class="services__item-name">Монтаж систем загазованности</span>
+            <img data-object-fit="cover" src="img/services-8.jpg" alt="...">
           </a>
         </div>
       </div>
@@ -244,42 +324,56 @@
     </div>
     <section class="projects">
       <div class=" container projects__wrapper">
-          <div class="projects__left-column">
-            <h2 class="projects__title">Выполненные объекты</h2>
-            <a class="projects__link" href="#">Все объекты
-              <span class="glyphicon glyphicon-align-justify"></span>
+        <div class="projects__left-column">
+          <h2 class="projects__title">Выполненные объекты</h2>
+          <a class="projects__link" href="#">Все объекты
+            <span class="glyphicon glyphicon-align-justify"></span>
+          </a>
+          <div class="projects__slider-controls hidden-xs">
+            <a class="projects__control-btn carousel-control" href="#carousel-2" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Next</span>
             </a>
-            <div class="projects__slider-controls hidden-xs">
-              <a class="projects__control-btn carousel-control" href="#carousel-generic-2" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-                <span class="sr-only">Next</span>
-              </a>
-              <a class="projects__control-btn carousel-control" href="#carousel-generic-2" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-            </div>
+            <a class="projects__control-btn carousel-control" href="#carousel-2" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Previous</span>
+            </a>
           </div>
-          <div class="projects__right-column">
-            <div id="carousel-generic-2" class="carousel slide projects__carousel" data-ride="carousel">
-              <div class="carousel-inner" role="listbox">
-                <ol class="slider-controls slider-controls--vertical carousel-indicators">
-                  <li class="slider-controls__item" data-target="#carousel-generic-2" data-slide-to="0"></li>
-                  <li data-target="#carousel-generic-2" data-slide-to="1" class="active slider-controls__item"></li>
-                  <li class="slider-controls__item" data-target="#carousel-generic-2" data-slide-to="2"></li>
-                  <li class="slider-controls__item" data-target="#carousel-generic-2" data-slide-to="3"></li>
-                </ol>
-                <div class="projects__slider-item item active">
-                  <picture>
-                    <source media="(min-width: 1919px)" srcset="img/project-1-full.jpg">
-                    <img src="img/project-1.jpg" alt="..." width="759" height="533">
-                  </picture>
-                </div>
-                <div class="projects__slider-item item">
-                  <picture>
-                    <source media="(min-width: 1919px)" srcset="img/project-1-full.jpg">
-                    <img src="img/project-1.jpg" alt="..." width="1079" height="533">
-                  </picture>
+        </div>
+        <div class="projects__right-column">
+          <div id="carousel-2" class="carousel slide projects__carousel" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <ol class="slider-controls slider-controls--vertical carousel-indicators">
+                <li class="slider-controls__item" data-target="#carousel-2" data-slide-to="0"></li>
+                <li data-target="#carousel-2" data-slide-to="1" class="active slider-controls__item"></li>
+                <li class="slider-controls__item" data-target="#carousel-2" data-slide-to="2"></li>
+                <li class="slider-controls__item" data-target="#carousel-2" data-slide-to="3"></li>
+
+              </ol>
+              <button class="slider-controls__zoom-btn" type="button"></button>
+              <div class="projects__slider-item item active">
+                <picture>
+                  <source media="(min-width: 1919px)" srcset="img/project-1-full.jpg">
+                  <img src="img/project-1.jpg" alt="..." width="759" height="533">
+                </picture>
+              </div>
+              <div class="projects__slider-item item">
+                <picture>
+                  <source media="(min-width: 1919px)" srcset="img/project-1-full.jpg">
+                  <img src="img/project-1.jpg" alt="..." width="1079" height="533">
+                </picture>
+              </div>
+              <div class="projects__slider-item item">
+                <picture>
+                  <source media="(min-width: 1919px)" srcset="img/project-1-full.jpg">
+                  <img src="img/project-1.jpg" alt="..." width="1079" height="533">
+                </picture>
+              </div>
+              <div class="projects__slider-item item">
+                <picture>
+                  <source media="(min-width: 1919px)" srcset="img/project-1-full.jpg">
+                  <img src="img/project-1.jpg" alt="..." width="1079" height="533">
+                </picture>
               </div>
             </div>
           </div>
@@ -342,18 +436,21 @@
           <div class="row">
             <div class="col-xs-6  page-footer__copyright-text">© 2011-2016. Аверс. Все права защищены.</div>
             <div class="col-xs-6  page-footer__developer">
-              <div>Создано<br> 2016</div>
+              <div class="page-footer__logo-text">Создано<br> <span>2016</span></div>
               <a class="page-footer__copyright-logo" href="#">
-                <img src="img/8-planet.png" alt="" width="41" height="38">
+                <img src="img/8-planet.png" alt="logo" width="41" height="38">
               </a>
             </div>
           </div>
         </div>
       </div>
     </footer>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/jquery.mobile.custom.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/svg4everybody.min.js"></script> -->
+    <script src="js/stackblur.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/objectFitPolyfill.js"></script>
   </body>
 </html>

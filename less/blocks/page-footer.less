@@ -35,13 +35,13 @@
 .page-footer__num {
   display: block;
   margin-bottom: 6px;
-  .font-exo(12px , 14px, 600, #fff);
+  .font-param(12px , 14px, 600, #fff);
   text-align: left;
 }
 .page-footer__num-desc {
   display: block;
   padding-left: 2px;
-  .font-exo(10px , 12px, 200, fade(#fff, 53%));
+  .font-param(10px , 12px, 200, fade(#fff, 53%));
   text-align: left;
 }
 .page-footer__nav {
@@ -51,12 +51,20 @@
 }
 .page-footer__copyright {
   padding: 29px 20px;
+  .font-param(12px , 12px, 200, fade(#fff, 53%));
   .bg-img('background-footer-2.jpg', #535558);
   @media (min-width: @width-1920) {
     background: #535558 url("../img/background-footer-2-full.jpg") no-repeat 50% 50%;
     background-size: cover;
   }
-  .font-exo(12px , 12px, 200, fade(#fff, 53%));
+}
+.page-footer__logo-text {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 10px;
+  line-height: 16px;
+  span {
+    font-size: 12px;
+  }
 }
 .page-footer__copyright-text {
   padding: 15px 0;
@@ -84,7 +92,7 @@
     }
       a {
         padding: 0;
-        .font-exo(14px, 26px, 400);
+        .font-param(14px, 26px, 400);
         text-transform: uppercase;
         &:hover {
           color: #808080;
@@ -155,7 +163,8 @@
   .page-footer__nav {
     .page-footer__nav-item {
       color: #fff;
-      margin: 38px 30px 33px;
+      // margin: 38px 30px 33px;
+      margin: 38px 26px 33px;
       &:first-child {
         margin-left: 0;
       }
@@ -164,7 +173,7 @@
       }
         a {
           padding: 0;
-          .font-exo(14px, 48px, 700);
+          .font-param(14px, 48px, 700);
           text-transform: uppercase;
           &:hover {
             color: #808080;

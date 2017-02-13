@@ -1,6 +1,6 @@
 .about {
   display: none;
-  .font-exo(20px, 30px, 200);
+  .font-param(20px, 30px, 200);
   overflow: hidden;
 }
 .about__wrapper {
@@ -10,7 +10,10 @@
     .pseudo(515px, 515px);
     right: -80px;
     bottom: -88px;
-    background: transparent url('../img/logo-big.png') no-repeat center center;
+    background: transparent url('../img/icons/background-logo.svg') no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.07;
   }
 }
 .about__comment {
