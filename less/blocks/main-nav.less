@@ -28,6 +28,7 @@
   }
 }
 .main-nav__icon-wrapper {
+  display: none;
   position: absolute;
   width: 40px;
   height: 40px;
@@ -51,6 +52,9 @@
   // }
 }
 @media (min-width: @screen-sm-min) {
+  .main-nav__icon-wrapper {
+    display: block;
+  }
   .main-nav .main-nav__item {
     a {
       // padding: 14px 23px;
